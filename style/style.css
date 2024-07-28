@@ -59,13 +59,14 @@ body {
 .card_main h1 {
   color: hsl(0, 0%, 100%);
   font-family: "Lexend Deca", sans-serif;
-  font-size: 1.7rem;
+  font-size: 2.4rem;
   margin-bottom: 17px;
 }
 .card_main h1 span {
   color: hsl(277, 64%, 61%);
 }
 .card_main p {
+  font-size: 1.1rem;
   margin-bottom: 23px;
   color: hsla(0, 0%, 100%, 0.75);
 }
@@ -88,16 +89,16 @@ body {
 }
 
 .card_image-box {
-  width: -moz-min-content;
-  width: min-content;
-  height: 100%;
+  width: 600px;
+  height: 400px;
 }
 .card_image-box .card_image_desktop {
   position: relative;
   height: 400px;
-  width: 600px;
+  width: 500px;
   background: url(../images/image-header-desktop.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .card_image-box .card_image_desktop::before {
   content: "";
@@ -111,6 +112,10 @@ body {
 }
 
 @media all and (max-width: 500px) {
+  body {
+    height: auto;
+    min-height: 100vh;
+  }
   .card {
     text-align: center;
     display: flex;
